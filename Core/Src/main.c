@@ -20,7 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "led_display.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -92,16 +92,13 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  uint8_t counter = 0;
   while (1)
   {
-    /* USER CODE END WHILE */
-	 //Exercise 1
-	 HAL_GPIO_TogglePin(RED_LED_GPIO_Port, RED_LED_Pin);
-	 HAL_Delay(1000);
-
-	 //I'm doing something for lab1-ex3
-	 //I'm done for lab1-ex3
-    /* USER CODE BEGIN 3 */
+	  counter = (counter + 2)%10;
+	  update_seven_segment_led_buffer(counter,0);
+	  seven_segment_led_driver();
+	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
