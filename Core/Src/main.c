@@ -100,7 +100,7 @@ int main(void)
 	 HAL_Delay(1000);
 
 	 //I'm doing something for lab1-ex3
-
+	 //I'm done for lab1-ex3
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
