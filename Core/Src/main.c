@@ -93,12 +93,19 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   uint8_t counter = 0;
+  uint8_t valueToDisplay = 0;
   while (1)
   {
-	  counter = (counter + 2)%10;
-	  update_seven_segment_led_buffer(counter,0);
-	  seven_segment_led_driver();
-	  HAL_Delay(1000);
+	  counter = (counter + 1)%100;
+	  if(counter == 0){
+		  valueToDisplay = (valueToDisplay + 1) % 10;
+		  if(!update_seven_segment_led_buffer(valueToDisplay,0)){
+			  //show an error log
+		  }
+	  } else {
+		  seven_segment_led_driver();
+	  }
+	  HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }
