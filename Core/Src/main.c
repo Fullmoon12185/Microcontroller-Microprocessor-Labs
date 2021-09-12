@@ -99,8 +99,8 @@ int main(void)
 	 HAL_GPIO_TogglePin(RED_LED_GPIO_Port, RED_LED_Pin);
 	 HAL_Delay(1000);
 
-	 //I will do some thing for lab1-ex1 here
-	 //I'm done for lab1-ex1
+	 //I'm start doing Lab1-ex2
+	 //I'm writing code for lab1-ex2
 
     /* USER CODE BEGIN 3 */
   }
