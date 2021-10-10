@@ -58,20 +58,40 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define RED_LED_Pin 				GPIO_PIN_5
-#define RED_LED_GPIO_Port 			GPIOA
-
-
-#define SEVEN_SEGMENT_1_A			GPIO_PIN_0
-#define SEVEN_SEGMENT_1_A_PORT		GPIOC
-#define SEVEN_SEGMENT_1_B			GPIO_PIN_1
-#define SEVEN_SEGMENT_1_B_PORT		GPIOC
-#define SEVEN_SEGMENT_1_C			GPIO_PIN_2
-#define SEVEN_SEGMENT_1_C_PORT		GPIOC
-#define SEVEN_SEGMENT_1_D			GPIO_PIN_3
-#define SEVEN_SEGMENT_1_D_PORT		GPIOC
-//...
-
+#define RED_LED_0_Pin 			GPIO_PIN_0
+#define RED_LED_0_GPIO_Port 	GPIOA
+#define RED_LED_1_Pin 			GPIO_PIN_1
+#define RED_LED_1_GPIO_Port 	GPIOA
+#define RED_LED_2_Pin 			GPIO_PIN_2
+#define RED_LED_2_GPIO_Port 	GPIOA
+#define RED_LED_3_Pin 			GPIO_PIN_3
+#define RED_LED_3_GPIO_Port 	GPIOA
+#define RED_LED_4_Pin 			GPIO_PIN_4
+#define RED_LED_4_GPIO_Port 	GPIOA
+#define RED_LED_5_Pin 			GPIO_PIN_5
+#define RED_LED_5_GPIO_Port 	GPIOA
+#define RED_LED_6_Pin 			GPIO_PIN_6
+#define RED_LED_6_GPIO_Port 	GPIOA
+#define RED_LED_7_Pin 			GPIO_PIN_7
+#define RED_LED_7_GPIO_Port 	GPIOA
+#define A_SEGMENT_Pin 			GPIO_PIN_0
+#define A_SEGMENT_GPIO_Port 	GPIOB
+#define B_SEGMENT_Pin 			GPIO_PIN_1
+#define B_SEGMENT_GPIO_Port 	GPIOB
+#define C_SEGMENT_Pin GPIO_PIN_2
+#define C_SEGMENT_GPIO_Port GPIOB
+#define BUTTON_1_Pin GPIO_PIN_8
+#define BUTTON_1_GPIO_Port GPIOA
+#define D_SEGMENT_Pin GPIO_PIN_3
+#define D_SEGMENT_GPIO_Port GPIOB
+#define E_SEGMENT_Pin GPIO_PIN_4
+#define E_SEGMENT_GPIO_Port GPIOB
+#define F_SEGMENT_Pin GPIO_PIN_5
+#define F_SEGMENT_GPIO_Port GPIOB
+#define G_SEGMENT_Pin GPIO_PIN_6
+#define G_SEGMENT_GPIO_Port GPIOB
+#define DOT_SEGMENT_Pin GPIO_PIN_7
+#define DOT_SEGMENT_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
